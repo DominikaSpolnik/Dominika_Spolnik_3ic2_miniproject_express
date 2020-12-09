@@ -1,0 +1,146 @@
+
+body, html {
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh; 
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    background-color: #3d3dc2;
+    color: white;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.header a{
+    margin-right: 20px;
+}
+
+#admin_second_header {
+    background-color: #ffff1a;
+    color: black;
+}
+
+#page_name{
+    color: #bfbfbf;
+    font-size: 8em;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+#admin_second_header a:link{
+    color: black;
+}
+
+#admin_second_header a:visited {
+    color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form_style{
+    display: flex;
+    flex-direction: row;
+    width: 18vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#labels, #inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 30px;
+}
+
+input, select {
+    margin-bottom: 30px;
+}
+
+#submit_button{
+    width: 100px;
+    height: 50px;
+    font-size: 1em;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.table_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.id_cell, .user_cell, .student_cell, .age_cell, .plec_cell{
+    border: 1px solid #999900;
+    margin: 1px;
+    height: 8vh;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+}
+
+.id_cell{
+    width: 8vw;
+}
+
+.user_cell{
+    width: 30vw;
+}
+
+.student_cell, .age_cell, .plec_cell{
+    width: 20vw;
+}
+
+#sort_form{
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    color: white;
+}
+
+#sort_form input{
+    margin-right: 30px;
+}
