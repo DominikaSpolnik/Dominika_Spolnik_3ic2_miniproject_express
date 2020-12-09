@@ -20,22 +20,22 @@ app.use(express.static('static'))
 var path = require("path")
 
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname + "main.html"))
+    res.sendFile(path.join(__dirname + "/static/main.html"))
 })
 
 app.get("/register", function (req, res) {
-    res.sendFile(path.join(__dirname + "register.html"))
+    res.sendFile(path.join(__dirname + "/static/register.html"))
 })
 
 app.get("/login", function (req, res) {
-    res.sendFile(path.join(__dirname + "login.html"))
+    res.sendFile(path.join(__dirname + "/static/login.html"))
 })
 
 app.get("/admin", function (req, res) {
     if(logged==false){
-        res.sendFile(path.join(__dirname + "admin-denied.html"))
+        res.sendFile(path.join(__dirname + "/static/admin-denied.html"))
     }else if(logged==true){
-        res.sendFile(path.join(__dirname + "admin.html"))
+        res.sendFile(path.join(__dirname + "/static/admin.html"))
     }
 })
 
@@ -142,7 +142,7 @@ app.get("/sort", function (req, res) {
         })
 
     }else{
-        res.sendFile(path.join(__dirname + "admin-denied.html"))
+        res.sendFile(path.join(__dirname + "/static/admin-denied.html"))
     }
 })
 
@@ -169,7 +169,7 @@ app.get("/gender", function (req, res) {
 
         res.send(output_page_1+table_k+table_m+output_page_2)
     }else{
-        res.sendFile(path.join(__dirname + "admin-denied.html"))
+        res.sendFile(path.join(__dirname + "/static/admin-denied.html"))
     }
 })
 
@@ -195,7 +195,7 @@ app.get("/show", function (req, res) {
 
         res.send(output_page_1+table+output_page_2)
     }else{
-        res.sendFile(path.join(__dirname + "admin-denied.html"))
+        res.sendFile(path.join(__dirname + "/static/admin-denied.html"))
     }
 })
 
